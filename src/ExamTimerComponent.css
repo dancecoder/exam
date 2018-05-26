@@ -1,0 +1,13 @@
+/* 
+    Created on : May 26, 2018, 11:11:19 AM
+    Author     : ddutikov
+*/
+
+exam-timer-component {
+  display: block;
+  text-align: right;
+}
+
+exam-timer-component > span {
+  color: gray;
+}

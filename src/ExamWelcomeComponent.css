@@ -1,0 +1,17 @@
+/*
+    Created on : May 26, 2018, 10:35 AM
+    Author     : ddutikov
+*/
+
+exam-welcome-component {
+  display: block;  
+  text-align: center;
+  flex: 0 0 600px;
+  align-self: center;
+}
+
+exam-welcome-component > a {
+  display: inline-block;
+  padding: .5em;
+  background-color: silver;
+}

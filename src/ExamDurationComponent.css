@@ -1,0 +1,11 @@
+/* 
+    Created on : May 26, 2018, 1:02:14 PM
+    Author     : ddutikov
+*/
+
+exam-duration-component {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 110%;
+  color: #2d7fc7;
+}

@@ -1,0 +1,23 @@
+/* 
+    Created on : May 26, 2018, 2:12:09 PM
+    Author     : ddutikov
+*/
+
+exam-results-component {
+  display: block;
+}
+
+exam-results-component .accepted-task {
+  display: flex;
+  padding: 0 0 .5em 0;
+}
+
+exam-results-component .accepted-task > exam-duration-component,
+exam-results-component .accepted-task > span {
+  margin: .5em;
+}
+
+exam-results-component > div:last-of-type {
+  text-align: center;
+  padding: 1em;
+}

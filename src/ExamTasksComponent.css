@@ -1,0 +1,60 @@
+/* 
+    Created on : May 26, 2018, 10:35:06 AM
+    Author     : ddutikov
+*/
+
+exam-tasks-component {
+  display: block;
+  align-self: center;
+}
+
+exam-tasks-component > div {
+  display: flex;
+  flex-direction: column;
+}
+
+exam-tasks-component > div > div {
+  display: flex;
+}
+
+exam-tasks-component > div > div > button {
+  height: 50px;
+  align-self: flex-end;
+  margin-bottom: 25px;
+  width: 100px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #087ade;
+}
+
+
+exam-tasks-component > div > div > button:hover {
+  text-decoration: underline;
+}
+
+exam-tasks-component > div > div > button:first-of-type {
+  text-align: right;
+}
+
+exam-tasks-component > div > div > button:last-of-type {
+  text-align: left;
+}
+
+exam-tasks-component > div > div > button[disabled="disabled"] {
+  color: gray;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+
+
+exam-tasks-component exam-timer-component {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+exam-tasks-component .finished [role="button"] {
+  margin: .5em;
+}

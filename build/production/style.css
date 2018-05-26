@@ -1,0 +1,188 @@
+html, body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+body > ng-view {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+[role="button"].colored {
+  padding: .5em 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #2196F3;
+  background: linear-gradient(#92cefd, #42a7f7);
+  color: white;
+  text-decoration: none;
+}
+
+[role="button"].colored[disabled="disabled"] {
+  border: solid 1px #7aa5c7;
+  background: linear-gradient(#bed3e4, #93b7d4);
+  cursor: not-allowed;
+}
+/* 
+    Created on : May 26, 2018, 10:41:17 AM
+    Author     : ddutikov
+*/
+
+exam-task-component {
+  display: flex;  
+  padding: 0 .8em;
+  font-size: 150%;
+}
+
+exam-task-component > form {
+  display: flex;
+  flex-direction: column;
+}
+
+exam-task-component > form > img,
+exam-task-component > form > input {
+  margin-bottom: .8em;
+  border-radius: 5px;
+}
+
+exam-task-component > form > button {
+  width: 300px;
+  align-self: center;  
+}
+
+exam-task-component > form > input {
+  padding: .3em;  
+  border: solid 1px gray;
+}
+/* 
+    Created on : May 26, 2018, 10:35:06 AM
+    Author     : ddutikov
+*/
+
+exam-tasks-component {
+  display: block;
+  align-self: center;
+}
+
+exam-tasks-component > div {
+  display: flex;
+  flex-direction: column;
+}
+
+exam-tasks-component > div > div {
+  display: flex;
+}
+
+exam-tasks-component > div > div > button {
+  height: 50px;
+  align-self: flex-end;
+  margin-bottom: 25px;
+  width: 100px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #087ade;
+}
+
+
+exam-tasks-component > div > div > button:hover {
+  text-decoration: underline;
+}
+
+exam-tasks-component > div > div > button:first-of-type {
+  text-align: right;
+}
+
+exam-tasks-component > div > div > button:last-of-type {
+  text-align: left;
+}
+
+exam-tasks-component > div > div > button[disabled="disabled"] {
+  color: gray;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+
+
+exam-tasks-component exam-timer-component {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+exam-tasks-component .finished [role="button"] {
+  margin: .5em;
+}
+/*
+    Created on : May 26, 2018, 10:35 AM
+    Author     : ddutikov
+*/
+
+exam-welcome-component {
+  display: block;  
+  text-align: center;
+  flex: 0 0 600px;
+  align-self: center;
+}
+
+exam-welcome-component > a {
+  display: inline-block;
+  padding: .5em;
+  background-color: silver;
+}
+/* 
+    Created on : May 26, 2018, 2:12:09 PM
+    Author     : ddutikov
+*/
+
+exam-results-component {
+  display: block;
+}
+
+exam-results-component .accepted-task {
+  display: flex;
+  padding: 0 0 .5em 0;
+}
+
+exam-results-component .accepted-task > exam-duration-component,
+exam-results-component .accepted-task > span {
+  margin: .5em;
+}
+
+exam-results-component > div:last-of-type {
+  text-align: center;
+  padding: 1em;
+}
+/* 
+    Created on : May 26, 2018, 11:11:19 AM
+    Author     : ddutikov
+*/
+
+exam-timer-component {
+  display: block;
+  text-align: right;
+}
+
+exam-timer-component > span {
+  color: gray;
+}
+/* 
+    Created on : May 26, 2018, 1:02:14 PM
+    Author     : ddutikov
+*/
+
+exam-duration-component {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 110%;
+  color: #2d7fc7;
+}
+
+/*# sourceMappingURL=style.css.map*/

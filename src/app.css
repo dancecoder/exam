@@ -1,0 +1,31 @@
+html, body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+body > ng-view {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+[role="button"].colored {
+  padding: .5em 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #2196F3;
+  background: linear-gradient(#92cefd, #42a7f7);
+  color: white;
+  text-decoration: none;
+}
+
+[role="button"].colored[disabled="disabled"] {
+  border: solid 1px #7aa5c7;
+  background: linear-gradient(#bed3e4, #93b7d4);
+  cursor: not-allowed;
+}

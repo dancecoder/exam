@@ -1,0 +1,31 @@
+/* 
+    Created on : May 26, 2018, 10:41:17 AM
+    Author     : ddutikov
+*/
+
+exam-task-component {
+  display: flex;  
+  padding: 0 .8em;
+  font-size: 150%;
+}
+
+exam-task-component > form {
+  display: flex;
+  flex-direction: column;
+}
+
+exam-task-component > form > img,
+exam-task-component > form > input {
+  margin-bottom: .8em;
+  border-radius: 5px;
+}
+
+exam-task-component > form > button {
+  width: 300px;
+  align-self: center;  
+}
+
+exam-task-component > form > input {
+  padding: .3em;  
+  border: solid 1px gray;
+}
