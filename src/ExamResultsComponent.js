@@ -33,14 +33,14 @@ export const ExamResultsComponent = {
         <exam-duration-component duration="task.duration"></exam-duration-component>
         <span class="answer" ng-bind="task.answer"></span>
       </div>
+      <div>
+        <button role="button" class="colored" ng-click="$ctrl.onReset()">Пройти тест заново</button>
+      </div>
     </div>
     <div ng-if="!$ctrl.finished">
       <p>Результаты не доступны, вы ответили не на все вопросы.</p>
-      <a ng-href="/tasks">Вернуться к вопросам</a>
-    </div>
-    <div>      
-      <button role="button" class="colored" ng-click="$ctrl.onReset()">Пройти тест заново</button>
-    </div>
+      <a role="button" class="colored"  ng-href="#!/tasks">Вернуться к вопросам</a>
+    </div>    
   `,
 
   bindings: {

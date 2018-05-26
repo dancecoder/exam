@@ -17,7 +17,7 @@ exam-results-component .accepted-task > span {
   margin: .5em;
 }
 
-exam-results-component > div:last-of-type {
+exam-results-component > div > div:last-of-type {
   text-align: center;
   padding: 1em;
 }
