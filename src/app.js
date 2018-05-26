@@ -33,7 +33,7 @@ appModule.constant('fetchTasks', fetchTasks);
 appModule.constant('postAnswer', postAnswer);
 
 appModule.config(['$locationProvider', '$routeProvider', ($locationProvider, $routeProvider) => {
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(false);
 
   $routeProvider.when('/welcome', { template: '<exam-welcome-component></exam-welcome-component>' })
                 .when('/tasks',   { template: `<exam-tasks-component
