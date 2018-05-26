@@ -2,7 +2,7 @@
 
 'use strict';
 
-export default class AppController {
+export class AppController {
 
   constructor($scope, $location, persistence, fetchTasks, postAnswer) {
 
@@ -69,3 +69,5 @@ export default class AppController {
   }
   
 }
+
+AppController.$inject = ['$scope', '$location', 'persistence', 'fetchTasks', 'postAnswer'];

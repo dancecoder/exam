@@ -63,6 +63,8 @@ class Controller {
   }
 }
 
+Controller.$inject = ['$scope', 'persistence'];
+
 export const ExamTasksComponent = {
 
   controller: Controller,

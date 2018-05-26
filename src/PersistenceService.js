@@ -57,7 +57,7 @@ class LocalStorageProxyHandler {
 
 }
 
-export default class PersistenceService {
+export class PersistenceService {
 
   constructor() {
     this.dataObj = {};

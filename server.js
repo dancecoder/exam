@@ -7,7 +7,8 @@ const url = require('url');
 
 
 const PORT = 8080;
-const ROOT = path.resolve(__dirname, 'build/development');
+//const ROOT = path.resolve(__dirname, 'build/development');
+const ROOT = path.resolve(__dirname, 'build/production');
 
 const RESOURCES = {
   '/bundle.js': fs.readFileSync(path.resolve(ROOT, 'bundle.js')),

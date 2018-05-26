@@ -4,7 +4,7 @@ import './ExamTimerComponent.css';
 
 class Controller {
 
-  constructor($scope, $interval, $window, persistence) {
+  constructor($scope, $interval, $window) {
     this.scope = $scope;
     this.interval = $interval;
     this.intPromise = null;
@@ -56,6 +56,8 @@ class Controller {
   }
 
 }
+
+Controller.$inject = ['$scope', '$interval', '$window'];
 
 export const ExamTimerComponent = {
 

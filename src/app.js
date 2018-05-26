@@ -5,8 +5,8 @@ import ngRoute from 'angular-route';
 
 import './app.css';
 
-import AppController from './AppController';
-import PersistenceService from './PersistenceService'
+import { AppController } from './AppController';
+import { PersistenceService } from './PersistenceService'
 import { ExamTaskComponent } from './ExamTaskComponent';
 import { ExamTasksComponent } from './ExamTasksComponent';
 import { ExamWelcomeComponent } from './ExamWelcomeComponent';
@@ -17,7 +17,7 @@ import { ExamDurationComponent } from './ExamDurationComponent';
 import { fetchTasks, postAnswer } from './api';
 
 
-const appModule = angular.module('exam', [ngRoute] );
+const appModule = angular.module('exam', ['ngRoute'] );
 
 appModule.controller('AppController', AppController);
 
