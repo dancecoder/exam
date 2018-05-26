@@ -33,7 +33,8 @@ appModule.constant('fetchTasks', fetchTasks);
 appModule.constant('postAnswer', postAnswer);
 
 appModule.config(['$locationProvider', '$routeProvider', ($locationProvider, $routeProvider) => {
-  $locationProvider.html5Mode(false);
+  $locationProvider.html5Mode(false); // Github Pages does not support HTML5 mode
+  $locationProvider.hashPrefix('!');
 
   $routeProvider.when('/welcome', { template: '<exam-welcome-component></exam-welcome-component>' })
                 .when('/tasks',   { template: `<exam-tasks-component

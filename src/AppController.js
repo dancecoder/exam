@@ -48,14 +48,14 @@ export default class AppController {
   }
 
   handleFinish() {
-    this.location.url('/results');
+    this.location.path('/results');
   }
 
   handleReset() {
     this.tasks = [];
     this.persistence.reset();
     // NOTE: use native reload until the API does not support sessions
-    window.location = '/welcome';
+    window.location = '/';
     //this.initSession().then(() => {
     //  this.location.url('/welcome');
     //  this.scope.$apply();

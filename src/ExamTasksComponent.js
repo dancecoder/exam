@@ -95,7 +95,7 @@ export const ExamTasksComponent = {
     <div ng-if="$ctrl.finished" class="finished">
       <p>Вы далы ответы на все вопросы</p>
       <button role="button" class="colored" ng-click="$ctrl.onReset()">Пройти тест заново</button>
-      <a role="button" class="colored" ng-href="/results">Просмотреть результаты</a>
+      <a role="button" class="colored" ng-href="#!/results">Просмотреть результаты</a>
     </div>
   `
 
