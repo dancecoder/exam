@@ -12,8 +12,8 @@ class Controller {
   $onChanges(changes) {    
     if (changes.duration) {
       let d = changes.duration.currentValue;
-      this.minutes = String(Math.floor(d / 60000 + 1 / 60)).padStart(2, '0');
-      this.seconds = String(Math.floor((d - this.minutes *60000) / 1000) + 1).padStart(2, '0');
+      this.minutes = String(Math.floor(d / 60000)).padStart(2, '0');
+      this.seconds = String(Math.floor((d % 60000) / 1000)).padStart(2, '0');
     }
   }
 }
